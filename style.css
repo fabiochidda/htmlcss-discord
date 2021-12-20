@@ -130,3 +130,31 @@ nav * {
     background-color: black;
     color: white;
 }
+
+.download-buttons {
+    max-width: 100%;
+    height: 100%;
+}
+
+.row {
+    width: 100%;
+    height: 600px;
+    float: left;
+    margin: 0;
+    position: relative;
+}
+
+.col-6 {
+    max-width: calc(100% - 29%);
+    height: 100%;
+    margin: 0;
+    display: inline-block;
+}
+
+
+.col-3 {
+    max-width: calc(100% - 70%);
+    height: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
