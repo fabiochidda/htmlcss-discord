@@ -1,0 +1,132 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+header {
+    background-image: url(img/jumbo.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    width: 65%;
+    height: 600px;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+}
+
+nav * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+}
+
+.logo a {
+    line-height: 50px;
+}
+
+.nav-buttons {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    
+}
+
+.nav-buttons ul {
+    line-height: 50px;
+}
+
+.nav-buttons li {
+    padding:0 15px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+.login-button {
+    width: 19%;
+    height: 100%;
+    text-align: right;
+    display: inline-block;
+}
+
+.login-button a {
+    padding: 0 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    line-height: 50px;
+    background-color: white;
+    color: black;
+}
+
+.text-container {
+    width: 100%;
+    margin-top: 20px;
+    height: calc(100% - 70px);  
+    position: relative;
+}
+
+.text-box {
+    width: 70%;
+    text-align: center;
+    font-size: larger;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-container h1 {
+    font-size: 50px;
+    padding-bottom: 25px;
+}
+
+.text-container p {
+    padding-bottom: 50px;
+}
+
+.text-box a {
+    text-decoration: none;
+}
+
+.mac-button {
+    padding: 15px 40px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+}
+
+.browser-button {
+    padding: 15px 40px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
