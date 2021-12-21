@@ -205,3 +205,62 @@ nav * {
     background-color: #8EA1E1;
     color: white;
 }
+
+/* Inizio Footer */
+
+footer {
+    background-color: #23272A;
+    color: white;
+    margin-top: 250px;
+}
+
+footer .col-2 li:first-child {
+    color: #5D6FAB;
+}
+
+footer h3 {
+    color: #5D6FAB;
+}
+
+footer .row:first-child {
+    padding-top: 50px;
+    border-bottom: 1px solid #5D6FAB;
+}
+
+footer li {
+    padding-bottom: 15px;
+}
+
+footer a {
+    color: white;
+    display: inline-block;
+}
+
+footer .language-select *{
+    padding-top: 20px;
+    margin-right: 10px;
+}
+
+footer .language-select img{
+    width: 10%;
+}
+
+footer .social-box li {
+    display: inline-block;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+.footer-box img {
+    float: left;
+    padding:20px 0;
+}
+
+.footer-box a {
+    float: right;
+    padding: 10px 15px;
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #5D6FAB;
+    border-radius: 25px;
+}
