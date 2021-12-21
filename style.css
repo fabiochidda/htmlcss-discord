@@ -1,5 +1,6 @@
+/* General */
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -8,25 +9,38 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    max-width: 960px;
+    height: 600px;
+    margin: 0 auto;
+}
+
 .clearfix::after {
     content: " ";
     display: block;
     clear: both;
 }
 
-.col-2 {
-    width: calc( (100% / 12) * 2 );
+.button {
+    padding: 15px 40px;
+    border-radius: 25px;
+    white-space: nowrap;
 }
 
-.col-8 {
-    width: calc( (100% / 12) * 8 );
-    display: inline-block;
-    background-color: blueviolet;
+.col-2 {
+    width: calc( ( 100% / 12 ) * 2 );
 }
 
 .col-4 {
-    width: 33%;
+    width: 33.33%;
+}
 
+.col-8 {
+    width: 66.66%;
+}
+
+.col-12 {
+    width: 100%;
 }
 
 a {
@@ -38,6 +52,8 @@ ul, ol {
     list-style: none;
 }
 
+
+/* Inizio Header */
 header {
     background-image: url(img/jumbo.png);
     width: 100%;
@@ -46,11 +62,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 
-}
-
-.container {
-    max-width: 960px;
-    height: 600px;
 }
 
 .nav-bar {
@@ -140,12 +151,6 @@ nav * {
     text-decoration: none;
 }
 
-.button {
-    padding: 15px 40px;
-    border-radius: 25px;
-    white-space: nowrap;
-}
-
 .button.button-black {
     background-color: black;
     color: white;
@@ -156,26 +161,47 @@ nav * {
     color: black;
 }
 
-.row {
-    width: 100%;
+/* Inizio Main */
+.row [class^="col"] {
     float: left;
-    padding: 50px 0;
-    background-color: black;
-}
-
-.img-box {
-    object-fit: cover;
 }
 
 .img-box img {
     max-width: 520px;
-    position: relative;
 }
 
-.col-description {
-    display: inline-block;
+.content-box {
+    padding: 90px 15px;
+}
+
+.col-description h2{
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+.col-description p{
+    font-size: 18px;
+}
+
+.col-12 {
+    text-align: center;
+}
+
+.download-box {
+    background-image: url(img/stars.svg);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.download-box h3 {
+    padding-bottom: 20px;
+}
+
+.button.last {
+    background-color: #8EA1E1;
     color: white;
-    background-color: blueviolet;
-    vertical-align: top;
 }
-
